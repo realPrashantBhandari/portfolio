@@ -1,70 +1,255 @@
-<!-- 
-    2 paragraph 
-    external link 
-    Image main
- -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Main</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Fira Sans">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Poppins">
+
 </head>
 <body>
-    <!-- Menu Bar -->
-    <div class ="menu-bar">
-        <p>Menu bar</p>
-        <nav>
-            <ul>
-                <li><a href="index.html" > Main</a></li>
-                <li><a href="second.html"> Second</a></li>
-                <li><a href="third.html"> Third</a></li>
-            </ul>
-        </nav>
-        
-    </div>
+    <div class="main-container">
+        <!-- Nav Bar -->
+        <header>    
+            <nav>
+                <ul class="nav-list">
+                    <li style="--navClr: #f5007a">
+                        <a href="#HOME" data-text="&nbsp;HOME">&nbsp;HOME</a>
+                    </li>
+                    <li style="--navClr: #4dfe5c">
+                        <a href="#ABOUT" data-text="&nbsp;ABOUT">&nbsp;ABOUT</a>
+                    </li>
+                    <li style="--navClr: #fcff47">
+                        <a href="#PROJECTS" data-text="&nbsp;PROJECTS">&nbsp;PROJECTS</a>
+                    </li>
+                    <li style="--navClr: #00e1fa">
+                        <a href="#CONTACT" data-text="&nbsp;CONTACT">&nbsp;CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section class="page-section" id="HOME">
+            <div class="body-container">
+                <div class="landing-container">
+                    <h1>COOL LANDING PAGE INTRO</h1>
+                </div>
+                
+            </div>
+            
+        </section>
 
-    <!-- Page Content -->
-    <p class="content">
-        <!-- Image -->
-        <img src="img\indexImage.jpg" alt="profilePic">
-        <h1> Prashant Bhandari</h1>
-        <h2> - Bs Electrical Engineering, Florida Tech</h2>
-        <h2> - Ms Software Development, Boston University</h2>
+        <!-- About Page -->
+        <section class="page-section" id="ABOUT">
+            <div class="body-container">
+                <div class="about-container">
+                    <div class="box b1">
+                        <img src="img\indexImage.jpg" alt="profilePic">
+                    </div>
+            
+                    <div class="box b2">
+                        <h1> Prashant Bhandari</h1>
+                        <h2> - Bs Electrical Engineering, Florida Tech</h2>
+                        <h2> - Ms Software Development, Boston University</h2>
+                
+                        <p>
+                            Hi I'm Prashant Bhandari and I am a software engineer with over 4 years of industry experiences. I am currently working in collins aerospace as a Level II Software Engineer. I have experience in full stack web developemnt and is proficient in front and backend frameworks. I have created mutiple project using a variety of tech stacks such as django, vue etc.
+                        </p>
+            
+                        <div class="box b3">
+                            <ul>
+                                <li>
+                                    <a class="link-neon" href="https://github.com/realPrashantBhandari" target="_blank">
+                                        Github
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-neon" href="https://www.linkedin.com/in/prashantbhandari24/" target="_blank">
+                                        Linkedin
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-neon" href="#" target="_blank">
+                                        Portfolio
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="box b4">
+                        <ul class="skill-list">
+                            <li tooltip-data="HTML">
+                                <img src="https://img.icons8.com/color/50/null/html-5--v1.png"/>
+                            </li>
+                            <li tooltip-data="CSS" >
+                                <img src="https://img.icons8.com/fluency/50/null/css3.png"/>
+                            </li>
+                            <li tooltip-data="Django">
+                                <img src="https://img.icons8.com/windows/50/null/django.png"/>
+                            </li>
+                            <li tooltip-data="Vue3">
+                                <img src="https://img.icons8.com/color/50/null/vue-js.png"/>
+                            </li>
+                            <li tooltip-data="Flutter">
+                                <img src="https://img.icons8.com/color/50/null/flutter.png"/>
+                            </li>
+                            <li tooltip-data="Bootstrap" >
+                                <img src="https://img.icons8.com/color/50/null/bootstrap.png"/>
+                            </li>
+                            <li tooltip-data="NodeJS">
+                                <img src="https://img.icons8.com/fluency/50/null/node-js.png"/>
+                            </li>
+                            <li tooltip-data="Flask" >
+                                <img src="https://img.icons8.com/ios/50/null/flask.png"/>
+                            </li>
+                            <li tooltip-data="jQuery">
+                                <img src="https://img.icons8.com/ios-filled/50/null/jquery.png"/>
+                            </li>
+                            <li tooltip-data="Git" >
+                                <img src="https://img.icons8.com/color/50/null/git.png"/>
+                            </li>
+                            <li tooltip-data="MySQL">
+                                <img src="https://img.icons8.com/color/50/null/mysql-logo.png"/>
+                            </li>
+                            <li tooltip-data="MongoDB">
+                                <img src="https://img.icons8.com/color/50/null/mongodb.png"/>
+                            </li>
+                            <li tooltip-data="Firebase">
+                                <img src="https://img.icons8.com/color/50/null/firebase.png"/>
+                            </li>
+                            <li tooltip-data="PostgreesSQL">
+                                <img src="https://img.icons8.com/color/50/null/postgreesql.png"/>
+                            </li>
+                        </ul>                    
+                    </div>
+                </div>
+            </div>
+           
+        </section>
 
-        <p>
-            Hi I'm Prashant Bhandari and I am a software engineer with over 4 years of industry experiences. I am currently working in collins aerospace as a Level II Software Engineer. I have experience in full stack web developemnt and is proficient in front and backend frameworks. I have created mutiple project using a variety of tech stacks such as django, vue etc.
-       </p>
+        <!-- Project -->
+        <section class="page-section" id="PROJECTS">
+            <div class="body-container">
+                <div class="card-container">
+                    <div class="card-item" style="--img-card: url(./img/getmefit.png)">
+                        <div class="card-content">
+                            <h1 class="card-name">Get Me FIt</h1>
+                            <div class="card-hover-content">
+                                <p class="card-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum non aperiam magni expedita ex corrupti, numquam neque iusto necessitatibus atque voluptate commodi tempora debitis nobis repellat accusamus nulla explicabo. Nostrum!
+                                    </p>
+                                    <a class="card-button" href="">Learn More</a>
+                                    <a class="card-button" href="">Demo</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="card-item" style="--img-card: url(./img/kiodoc.png)">
+                        <div class="card-content">
+                            <h1 class="card-name">Kio-Doc</h1>
+                            <div class="card-hover-content">
+                                <p class="card-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum non aperiam magni expedita ex corrupti, numquam neque iusto necessitatibus atque voluptate commodi tempora debitis nobis repellat accusamus nulla explicabo. Nostrum!
+                                    </p>
+                                <a class="card-button" href="">Learn More</a>
+                                <a class="card-button" href="">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="card-item" style="--img-card: url(./img/litFit.png)">
+                        <div class="card-content">
+                            <h1 class="card-name">Lit Fit</h1>
+                            <div class="card-hover-content">
+                                <p class="card-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum non aperiam magni expedita ex corrupti, numquam neque iusto necessitatibus atque voluptate commodi tempora debitis nobis repellat accusamus nulla explicabo. Nostrum!
+                                    
+                                    </p>
+                                <a class="card-button" href="">Learn More</a>
+                                <a class="card-button" href="">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="card-item" style="--img-card: url(./img/shopSafe.png)">
+                        <div class="card-content">
+                            <h1 class="card-name">Shop Safe</h1>
+                            <div class="card-hover-content">
+                                <p class="card-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum non aperiam magni expedita ex corrupti, numquam neque iusto necessitatibus atque voluptate commodi tempora debitis nobis repellat accusamus nulla explicabo. Nostrum!
+                                    </p>
+                                <a class="card-button" href="">Learn More</a>
+                                <a class="card-button" href="">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="card-item" style="--img-card: url(./img/seeker.png)">
+                        <div class="card-content">
+                            <h1 class="card-name">Seeker</h1>
+                            <div class="card-hover-content">
+                                <p class="card-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum non aperiam magni expedita ex corrupti, numquam neque iusto necessitatibus atque voluptate commodi tempora debitis nobis repellat accusamus nulla explicabo. Nostrum!
+                                    </p>
+                                <a class="card-button" href="">Learn More</a>
+                                <a class="card-button" href="">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-
-        <p>
-            Lorem ipsum In post mean shot ye. There out her child sir his lived. Design at uneasy me season of branch on praise esteem. Abilities discourse believing consisted remaining to no. Mistaken no me denoting dashwood as screened. Whence or esteem easily he on. Dissuade husbands at of no if disposal.
-
-            Certainly elsewhere my do allowance at. The address farther six hearted hundred towards husband. Are securing off occasion remember daughter replying. Held that feel his see own yet. Strangers ye to he sometimes propriety in. She right plate seven has. Bed who perceive judgment did marianne.
+        <!-- Contact Me -->
+        <section class="page-section" id="CONTACT">
+            <div class="body-container">
+                <div class="contact-container">
+                        <h1>Contact Me</h1>
+                        <ul class="contact-link">
+                            <li tooltip-contact="Hire me on Fiverr">
+                                <img src="https://img.icons8.com/color/100/null/fiverr.png"/>
+                            </li>
+                            <li tooltip-contact="Download Resume">
+                                <img src="https://img.icons8.com/stickers/100/null/parse-from-clipboard.png"/>
+                            </li>
+                        </ul>
+                        <h2>Fill out the form below to get in touch with me</h2>
+                    <div class="contact-form">
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="firstname">First Name*</label>
+                                <input type="text" name="firstname" id="firstname" required class="form-element">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname">Last Name</label>
+                                <input type="text" name="lastname" id="lastname"  class="form-element">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address*</label>
+                                <input type="email" name="email" id="email" required class="form-element">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Contact Number</label>
+                                <input type="tel" name="phone" id="phone"  class="form-element">
+                            </div>
+                            <div class="form-group-full">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" class="form-element"></textarea>
+                            </div>
+                            <div class="submit-group">
+                                <button type="submit"> Send Message </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
             
-            Two assure edward whence the was. Who worthy yet ten boy denote wonder. Weeks views her sight old tears sorry. Additions can suspected its concealed put furnished. Met the why particular devonshire decisively considered partiality. Certain it waiting no entered is. Passed her indeed uneasy shy polite appear denied. Oh less girl no walk. At he spot with five of view.
-            
-            Entire any had depend and figure winter. Change stairs and men likely wisdom new happen piqued six. Now taken him timed sex world get. Enjoyed married an feeling delight pursuit as offered. As admire roused length likely played pretty to no. Means had joy miles her merry solid order.
-            
-            Dispatched entreaties boisterous say why stimulated. Certain forbade picture now prevent carried she get see sitting. Up twenty limits as months. Inhabit so perhaps of in to certain. Sex excuse chatty was seemed warmth. Nay add far few immediate sweetness earnestly dejection.
-            
-            Be at miss or each good play home they. It leave taste mr in it fancy. She son lose does fond bred gave lady get. Sir her company conduct expense bed any. Sister depend change off piqued one. Contented continued any happiness instantly objection yet her allowance. Use correct day new brought tedious. By come this been in. Kept easy or sons my it done.
-            
-            Talking chamber as shewing an it minutes. Trees fully of blind do. Exquisite favourite at do extensive listening. Improve up musical welcome he. Gay attended vicinity prepared now diverted. Esteems it ye sending reached as. Longer lively her design settle tastes advice mrs off who.
-            
-            Good draw knew bred ham busy his hour. Ask agreed answer rather joy nature admire wisdom. Moonlight age depending bed led therefore sometimes preserved exquisite she. An fail up so shot leaf wise in. Minuter highest his arrived for put and. Hopes lived by rooms oh in no death house. Contented direction september but end led excellent ourselves may. Ferrars few arrival his offered not charmed you. Offered anxious respect or he. On three thing chief years in money arise of.
-            
-            Do commanded an shameless we disposing do. Indulgence ten remarkably nor are impression out. Power is lived means oh every in we quiet. Remainder provision an in intention. Saw supported too joy promotion engrossed propriety. Me till like it sure no sons.
-            
-            Enjoyed minutes related as at on on. Is fanny dried as often me. Goodness as reserved raptures to mistaken steepest oh screened he. Gravity he mr sixteen esteems. Mile home its new way with high told said. Finished no horrible blessing landlord dwelling dissuade if. Rent fond am he in on read. Anxious cordial demands settled entered in do to colonel.
-        </p>
-
-        <!-- External Link -->
-        <a href="https://github.com/realPrashantBhandari" target="_blank">
-            <h2>Github</h2>
-        </a>
+        </section>
     </div>
     
+
 </body>
 </html>
