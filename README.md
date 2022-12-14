@@ -27,3 +27,6 @@ npm run dev
 ```sh
 npm run build
 ```
+
+## Portfolio Information
+The protfolio is made using Vue3 as the frontend framework and firebase as a backend solution. The project make use of new vue3 composition api along with firebases real time databse to maintain data.
